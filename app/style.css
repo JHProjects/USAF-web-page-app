@@ -1,0 +1,82 @@
+* {
+	color: #0F0;
+	font-family: "Neue Haas Unica", "Helvetica", "Roboto", Sans-serif;
+	text-transform: uppercase;
+	font-size: 0.93rem;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	overflow: hidden;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+}
+
+main {
+	position: absolute;
+	top: 2%; 
+	right: 0; 
+	bottom: 5%; 
+	left: 0; 
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#canvas {
+	display: flex;
+	height: 100%;
+}
+
+#animation {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	justify-content: center;
+	margin-bottom: 20%;
+}
+
+#animation p {
+	text-align: center;
+
+	font-weight: 600;
+	font-size: 21.5vw;
+	letter-spacing: -2px;
+	line-height: 16.6vw;
+}
+
+#animation p:hover {
+	color: #000;
+	cursor: default;
+}
+
+@media screen and (min-width: 800px) {
+	#animation p {
+		font-size: 172px;
+		line-height: 131px;
+	}
+}
+
+ 
+#press-any-key {
+	visibility: hidden;
+	color: #000;
+	letter-spacing: 1px;
+	animation: 
+		PulsingColor 3s infinite;
+}
+
+
+/* Animation Keyframes */
+@keyframes PulsingColor {
+	0% {color: #000;}
+	25% {color: #000;}
+	50% {color: #0F0;}
+	80% {color: #000;}
+	100% {color: #000;}
+}
