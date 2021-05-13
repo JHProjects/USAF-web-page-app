@@ -46,10 +46,20 @@ function insertWord() {
 }
 
 setTimeout(e => {document.addEventListener("click", finish)}, 6000)
+setTimeout(e => {document.addEventListener("keyup", finish)}, 6000)
 
 function finish() {
 	pressAnyKeyElement.innerHTML = " "
 	clearInterval(insertWords)
+
+	p2.addEventListener("click", changeWordOnClick)
+	p3.addEventListener("click", changeWordOnClick)
+	p4.addEventListener("click", changeWordOnClick)
+	function changeWordOnClick() {
+		let ranWord2 = numGen(wordCount)
+		this.innerHTML = wordPool[ranWord2]
+		console.log(wordPool[ranWord2])
+	}
 
 	setTimeout(e => {
 		p1.innerHTML = "Újezd"
@@ -61,41 +71,39 @@ function finish() {
 		p2.innerHTML = "Walls"
 		p2.style.opacity = 1
 	}, 1500)
-	setTimeout(e => {p2.innerHTML = "Street"}, 2000)	
-	setTimeout(e => {p2.innerHTML = "Artist"}, 2500)
-	setTimeout(e => {p2.innerHTML = "Words"}, 3000)
-	setTimeout(e => {p2.innerHTML = "Color"}, 3500)
-	setTimeout(e => {p2.innerHTML = "Voice"}, 4000)
-	setTimeout(e => {p2.innerHTML = "Walls"}, 4500)
 	setTimeout(e => {
 		p3.innerHTML = "Street"
 		p3.style.opacity = 1
-	}, 5000)
+	}, 2000)
 	setTimeout(e => {
 		p4.innerHTML = "Artist"
 		p4.style.opacity = 1
-	}, 5500)
+	}, 2500)
 	setTimeout(e => {
 		p5.innerHTML = "Can"
 		p5.style.color = "#000"
 		p5.style.textShadow = ".06em 0 #0F0, -.06em 0 #0F0"
 		p5.style.opacity = 1
-	}, 6000)
+	}, 3000)
 	setTimeout(e => {
 		p6.innerHTML = "Talk"
 		p6.style.color = "#000"
 		p6.style.textShadow = ".06em 0 #0F0, -.06em 0 #0F0"
 		p6.style.opacity = 1
-	}, 6500)
-	setTimeout(e => {
+	}, 3500)
+	/* setTimeout(e => {
 		logo.style.visibility = "visible"
-	}, 7000)
+	}, 7000) */
 	setTimeout(e => {
-		document.body.classList.add("fade-out")
-	}, 8000)
-	setTimeout(e => {
-		window.location.href = "http://www.w3schools.com"
-	}, 9000)
+		pressAnyKeyElement.innerHTML = "Click Here to Continue"
+		pressAnyKeyElement.addEventListener("click", e => {
+			document.body.classList.add("fade-out")
+			setTimeout(e => {
+				window.location.href = "./home-page.html"
+			}, 2000)
+			
+		})
+	}, 5000)
 
 }
 

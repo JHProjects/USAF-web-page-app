@@ -84,6 +84,7 @@ main {
 	visibility: hidden;
 	color: #000;
 	letter-spacing: 1px;
+	cursor: pointer;
 	animation: 
 		PulsingColor 3s infinite;
 }
@@ -106,5 +107,5 @@ main {
 
 .fade-out {
 	opacity: 0;
-	transition: opacity 1s
+	transition: opacity 2s
 }
