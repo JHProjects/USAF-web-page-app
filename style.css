@@ -79,10 +79,10 @@ main {
 	bottom: 10px;
 }
  
-#press-any-key {
+#continue {
 	visibility: hidden;
 	color: #000;
-	letter-spacing: 1px;
+	letter-spacing: 2px;
 	cursor: pointer;
 	animation: 
 		PulsingColor 3s infinite;
