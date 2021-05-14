@@ -19,7 +19,7 @@ body {
 	margin-bottom: 50px
 }
 
-p a:hover {
+p a:hover, p a:active, p a:focus {
 	text-decoration: underline;
 	color: #0F0;
 }
@@ -147,7 +147,7 @@ footer {
 	list-style-type: none;
 }
 
-.footer-nav a:hover {
+.footer-nav a:hover, .footer-nav a:active, .footer-nav a:focus {
 	text-decoration: underline;
 	color: #0F0;
 }
