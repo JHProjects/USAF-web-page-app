@@ -33,6 +33,15 @@ setTimeout(e => {document.addEventListener("dblclick", finish)}, 1000)
 setTimeout(e => {document.addEventListener("keyup", finish)}, 1000)
 setTimeout(e => {p1.style.opacity = 0}, tick - 1)
 
+continueElement.style.visibility = "visible"
+continueElement.addEventListener("click", e => {
+	document.body.classList.add("fade-out")
+	setTimeout(e => {
+		window.location.href = "./home-page.html"
+	}, tick*4)
+			
+})
+
 var insertWords = setInterval((e) => {insertWord()}, tick)
 let countOfLoops = 0
 
@@ -136,14 +145,7 @@ function finish() {
 		logo.style.visibility = "visible"
 	}, 7000) */
 	setTimeout(e => {
-		continueElement.style.visibility = "visible"
-		continueElement.addEventListener("click", e => {
-			document.body.classList.add("fade-out")
-			setTimeout(e => {
-				window.location.href = "./home-page.html"
-			}, tick*4)
-			
-		})
+		continueElement.innerHTML = "continue"
 	}, tick*10)
 
 }
