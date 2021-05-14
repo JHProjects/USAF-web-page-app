@@ -1,7 +1,7 @@
-var touchStartX = 0
-var touchEndX = 0
+let touchStartX = 0
+let touchEndX = 0
 
-let swipableImg = document.querySelector(".random-photo")
+const swipableImg = document.querySelector(".random-photo")
 
 imgPool = [
 	"Comunism-memorial.jpg",
@@ -12,8 +12,8 @@ imgPool = [
 
 let ranPhotoNum = numGen(imgCount)
 
-swipableImg.addEventListener("touchstart", e => {touchStartX = e.screenX})
-swipableImg.addEventListener("touchend", e => {touchEndX = e.screenX; handleGesture()})
+swipableImg.addEventListener("touchstart", e => {touchStartX = e.changedTouches[0].screenX}, false)
+swipableImg.addEventListener("touchend", e => {touchEndX = e.changedTouches[0].screenX; handleGesture()}, false)
 
 function handleGesture() {
 	if (touchEndX < touchStartX) {
@@ -23,6 +23,11 @@ function handleGesture() {
 	}
 	if (touchEndX > touchStartX) {
 		alert("right")
+		nextPhoto = ranPhotoNum + 1
+		randomizePhoto(nextPhoto)
+	}
+	if (touchEndX == touchStartX) {
+		alert("click")
 		nextPhoto = ranPhotoNum + 1
 		randomizePhoto(nextPhoto)
 	}
