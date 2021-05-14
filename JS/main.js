@@ -12,6 +12,7 @@ imgPool = [
 
 let ranPhotoNum = numGen(imgCount)
 
+alert("test")
 swipableImg.addEventListener("touchstart", function(e) {touchStartX = e.screenX})
 swipableImg.addEventListener("touchend", function(e) {touchEndX = e.screenX; handleGesture()})
 
