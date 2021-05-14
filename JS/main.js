@@ -16,6 +16,7 @@ swipableImg.addEventListener("touchstart", function(e) {touchStartX = e.screenX}
 swipableImg.addEventListener("touchend", function(e) {touchEndX = e.screenX; handleGesture()})
 
 function handleGesture() {
+	alert("event works!")
 	if (touchEndX < touchStartX) {
 		alert("left")
 		prewPhoto = ranPhotoNum - 1

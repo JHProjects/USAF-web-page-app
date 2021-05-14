@@ -15,7 +15,7 @@
 	padding: 0;
 }
 
-p a:hover, p a:active {
+p a:hover {
 	text-decoration: underline;
 	color: #0F0;
 }
@@ -116,8 +116,12 @@ main {
 
 .paragraph-6 a {
 	font-weight: 600;
-	color: #000;
-	font-size: 1.6rem;
+	color: #FFF;
+	padding: 0  10px 3px 10px;
+	border: 2px solid #0F0;
+	background: #000;
+	border-radius: 5px;
+	font-size: 1.4rem;
 }
 
 /* || Footer */
@@ -136,6 +140,12 @@ footer {
 
 	main {
 		margin-top: 110px;
+	}
+}
+
+@media screen and (max-width: 200px) {
+	* {
+		font-size: 0.8rem;
 	}
 }
 
