@@ -18,17 +18,20 @@ swipableImg.addEventListener("touchend", e => {touchEndX = e.changedTouches[0].s
 function handleGesture() {
 	if (touchEndX < touchStartX) {
 		alert("left")
-		prewPhoto = ranPhotoNum - 1
+		var prewPhoto = ranPhotoNum - 1
+		if (prewPhoto == 0) {prewPhoto = imgCount}
 		randomizePhoto(prewPhoto)
 	}
 	if (touchEndX > touchStartX) {
 		alert("right")
-		nextPhoto = ranPhotoNum + 1
+		var nextPhoto = ranPhotoNum + 1
+		if (prewPhoto == imgCount) {prewPhoto = 0}
 		randomizePhoto(nextPhoto)
 	}
 	if (touchEndX == touchStartX) {
 		alert("click")
-		nextPhoto = ranPhotoNum + 1
+		var nextPhoto = ranPhotoNum + 1
+		if (prewPhoto == imgCount) {prewPhoto = 0}
 		randomizePhoto(nextPhoto)
 	}
 }
