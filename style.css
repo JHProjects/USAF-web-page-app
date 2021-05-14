@@ -53,6 +53,8 @@ header h3:hover, header h3:active  {
 		pulsingHightligts 3s infinite;
 }
 
+
+
 /* || Main */
 main {
 	margin: 0 auto;
@@ -68,7 +70,12 @@ main {
 	height: 100%;
 }
 
-.main-text {
+.path *, .path {
+	text-decoration: none;
+	font-size: 0.8rem;
+}
+
+.container {
 	margin: 1rem 0 1rem 0;
 
 	display: flex;
@@ -127,6 +134,30 @@ main {
 	border-radius: 5px;
 	font-size: 1.4rem;
 }
+
+
+/* || Poster page */
+.description {
+	float: left;
+	font-size: 0.8rem;
+	width: 5%;
+}
+
+.poster {
+	max-width: 320px;
+	margin: .5rem auto 3rem auto
+}
+.poster img {
+	width: 100%;
+}
+
+.poster p {
+	margin-top: 5px;
+	text-transform: initial;
+	font-size: 0.8rem;
+	color: #AAA;
+}
+
 
 /* || Footer */
 footer {
