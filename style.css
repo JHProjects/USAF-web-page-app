@@ -15,6 +15,10 @@
 	padding: 0;
 }
 
+body {
+	margin-bottom: 50px
+}
+
 p a:hover {
 	text-decoration: underline;
 	color: #0F0;
@@ -129,6 +133,23 @@ footer {
 	margin: 0 auto;
 	width: 91%;
 	max-width: 1000px;
+}
+
+.footer-nav ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between
+
+}
+
+.footer-nav li {
+	margin: 5px;
+	list-style-type: none;
+}
+
+.footer-nav a:hover {
+	text-decoration: underline;
+	color: #0F0;
 }
 
 
