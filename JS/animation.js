@@ -90,7 +90,7 @@ function insertWord() {
 		}, tick - 1)
 	}
 
-	if (countOfLoops >= 21) {
+	if (countOfLoops >= 23) {
 		finish()
 	}
 
