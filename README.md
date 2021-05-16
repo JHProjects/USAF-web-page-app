@@ -1,3 +1,3 @@
 # USAF-web-page-app
 School project. 
-trying to create dynamic website platform with animations and graphic content. Using JS and CSS.
+trying to create dynamic website platform with animations and design content. Using JS and CSS.
