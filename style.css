@@ -53,6 +53,11 @@ header h3:hover, header h3:active  {
 		pulsingHightligts 3s infinite;
 }
 
+header a:hover, header a:active  {
+	text-decoration: none;
+}
+
+
 
 
 /* || Main */
