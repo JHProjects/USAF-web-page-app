@@ -145,6 +145,23 @@ main {
 	font-size: 1.4rem;
 }
 
+/* || Map page */
+.map {
+	margin: 10px 0 10px 0;
+	width: 100%;
+}
+
+.text-blok {
+	text-align: justify;
+	text-align-last: center;
+}
+
+.green-bold-ita {
+	color: #0F0;
+	font-weight: 700;
+	font-style: italic;
+}
+
 
 /* || Poster page */
 .description {
@@ -210,7 +227,6 @@ footer {
 		font-size: 0.8rem;
 	}
 }
-
 
 
 /* || Animation Keyframes */
