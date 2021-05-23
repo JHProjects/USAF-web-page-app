@@ -7,8 +7,8 @@ imgPool = [
 	"Comunism-memorial.jpg",
 	"Babies.jpg",
 	"tucnaci.jpg",
-	"macha.jpg",
-	"bill.png"
+	// "macha.jpg",
+	// "bill.png"
 ]; let imgCount = imgPool.length
 
 let ranPhotoNum = numGen(imgCount)
